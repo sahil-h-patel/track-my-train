@@ -30,14 +30,6 @@ export interface Capacity {
     sections: Section[];
 }
 
-interface Train {
-    train_id: string;
-    line: string;
-    track: string; 
-    color?: string; // Optional
-    capacity: Capacity;
-}
-
 const Trains = new Mongo.Collection('trains');
 
 const CarSchema = new SimpleSchema({

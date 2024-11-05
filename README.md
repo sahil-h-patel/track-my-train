@@ -10,8 +10,8 @@ This project will integrate with the NJTransit API to provide real-time train sc
 
 ### 1. Database and Models
 
-- [ ] Implement models for data structure.
-- [ ] Set up MongoDB collections with schema validation.
+- [x] Implement models for data structure.
+- [x] Set up MongoDB collections with schema validation.
 - [ ] Test collections and models with mock data to verify structure.
 
 ### 2. NJTransit API Integration
@@ -38,3 +38,11 @@ This project will integrate with the NJTransit API to provide real-time train sc
   - **Challenge**: Integrate responses from multiple endpoints. Consider restructuring collections to enable joining data from both schedules and stop lists.
 
 ---
+
+### Roadblock 1: aldeed:collection2 typescript configuration
+
+I refered to the Meteor forums for this one:
+
+https://forums.meteor.com/t/how-to-combine-typescript-and-simpleschema/28475/6
+
+Natively Collection2 is javascript based so providing a TypeScript Interface solves this issue which is provided here.

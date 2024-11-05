@@ -6,7 +6,7 @@
     "lib": ["esnext", "dom"],
     "typeRoots": [
         "./node_modules/@types",
-        "shared/types/*" /* Add this line to include your custom types */
+        "shared/types/*" /* Custom types */
     ],
     "allowJs": true,
     "checkJs": false,
@@ -34,7 +34,8 @@
       "meteor/*": [
         "node_modules/@types/meteor/*",
         ".meteor/local/types/packages.d.ts"
-      ]
+      ],
+      "@env": ["env/env"]
     },
     "moduleResolution": "node",
     "resolveJsonModule": true,

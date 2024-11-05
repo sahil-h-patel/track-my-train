@@ -3,7 +3,7 @@ import SimpleSchema from 'simpl-schema';
 import { Capacity, CapacitySchema } from './train';
 
 // Define your TypeScript interfaces
-interface StationMsg {
+export interface StationMsg {
     msg_type: string;
     msg_text: string;
     msg_pubdate: Date;
@@ -12,7 +12,7 @@ interface StationMsg {
     msg_line_scope: string;
 }
 
-interface Stop {
+export interface Stop {
     station_2char: string;
     station_name: string;
     time: Date;
@@ -25,7 +25,7 @@ interface Stop {
     stop_lines: string[];
 }
 
-interface TrainSchedule {
+export interface TrainSchedule {
     sched_dep_date: Date;
     destination: string;
     track?: string; // Optional
@@ -43,7 +43,7 @@ interface TrainSchedule {
     stops: Stop[];
 }
 
-interface StationSchedule {
+export interface StationSchedule {
     station_2char: string;
     station_name: string;
     station_msgs: StationMsg[];
