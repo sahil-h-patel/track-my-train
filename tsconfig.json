@@ -35,7 +35,8 @@
         "node_modules/@types/meteor/*",
         ".meteor/local/types/packages.d.ts"
       ],
-      "@env": ["env/env"]
+      "@env": ["env/env"],
+      "@models/*": ["imports/api/models/*"]
     },
     "moduleResolution": "node",
     "resolveJsonModule": true,

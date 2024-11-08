@@ -1,7 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 
-interface Car {
+export interface Car {
     car_no: string;
     car_position: number;
     car_rest: boolean;
@@ -10,7 +10,7 @@ interface Car {
     cur_passenger_count: number;
 }
 
-interface Section {
+export interface Section {
     section_position: string;
     cur_percentage: number;
     cur_capacity_color?: string; // Optional
